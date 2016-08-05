@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+    <title>brainfjsk interpreter</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+  </head>
+  <body>
+    <div class="flexWrapper">
+      <div class="brainfuckArea">
+        <h2 id="pageName">brainfjsk</h2>
+        <h5 id="pageSubtitle">a javascript brainf*ck visualizer</h5>
+        <div class="buttonWrapper">
+          <div class="dropdown button" id="example">
+            <span id="longWord">Examples</span>
+            <span id="shortWord">Ex</span>
+            <div id="program">
+              <li data-example="helloWorld" class="programs">hello world</li>
+              <li data-example="echoInput" class="programs">reverse input</li>
+              <li data-example="binaryCount" class="programs">binary count</li>
+              <li data-example="rot13" class="programs">ROT13 cipher</li>
+            </div>
+          </div>
+          <div class="dropdown button" id="animationSpeed">
+            <i class="fa fa-clock-o" aria-hidden="true"></i>
+            <div id="speed">
+              <li class="speeds">Instant</li>
+              <li class="speeds">Fast</li>
+              <li class="speeds">Medium</li>
+              <li class="speeds">Slow</li>
+            </div>
+          </div>
+          <div class="button" id="run"><i class="fa fa-play" aria-hidden="true"></i></div>
+        </div>
+        <div class="codeAndInput">
+          <textarea id="code" placeholder="Code"></textarea>
+          <input type="text" id="input" placeholder="input">
+        </div>
+        <p id="info">Note that the binary counter example does not terminate, and thus will not run when speed is set to instant.</p>
+      </div>
+      <div class="memoryWrapper">
+        <ul class="memoryTape">
+          <div id="activeCell"></div>
+          <ul class="cellWrapper">
+            <li class="stackCell"></li>
+            <li class="memoryCells">0</li>
+          </ul>
+          <ul class="cellWrapper">
+            <li class="stackCell"></li>
+            <li class="memoryCells">0</li>
+          </ul>
+          <ul class="cellWrapper">
+            <li class="stackCell"></li>
+            <li class="memoryCells">0</li>
+          </ul>
+          <ul class="cellWrapper">
+            <li class="stackCell"></li>
+            <li class="memoryCells">0</li>
+          </ul>
+          <ul class="cellWrapper">
+            <li class="stackCell"></li>
+            <li class="memoryCells">0</li>
+          </ul>
+          <ul class="cellWrapper">
+            <li class="stackCell"></li>
+            <li class="memoryCells">0</li>
+          </ul>
+          <ul class="cellWrapper">
+            <li class="stackCell"></li>
+            <li class="memoryCells">0</li>
+          </ul>
+          <ul class="cellWrapper">
+            <li class="stackCell"></li>
+            <li class="memoryCells">0</li>
+          </ul>
+          <ul class="cellWrapper">
+            <li class="stackCell"></li>
+            <li class="memoryCells">0</li>
+          </ul>
+          <ul class="cellWrapper">
+            <li class="stackCell"></li>
+            <li class="memoryCells">0</li>
+          </ul>
+          <ul class="cellWrapper">
+            <li class="stackCell"></li>
+            <li class="memoryCells">0</li>
+          </ul>
+          <ul class="cellWrapper">
+            <li class="stackCell"></li>
+            <li class="memoryCells">0</li>
+          </ul>
+          <ul class="cellWrapper">
+            <li class="stackCell"></li>
+            <li class="memoryCells">0</li>
+          </ul>
+          <ul class="cellWrapper">
+            <li class="stackCell"></li>
+            <li class="memoryCells">0</li>
+          </ul>
+          <ul class="cellWrapper">
+            <li class="stackCell"></li>
+            <li class="memoryCells">0</li>
+          </ul>
+          <ul class="cellWrapper">
+            <li class="stackCell"></li>
+            <li class="memoryCells">0</li>
+          </ul>
+          <ul class="cellWrapper">
+            <li class="stackCell"></li>
+            <li class="memoryCells">0</li>
+          </ul>
+          <ul class="cellWrapper">
+            <li class="stackCell"></li>
+            <li class="memoryCells">0</li>
+          </ul>
+          <ul class="cellWrapper">
+            <li class="stackCell"></li>
+            <li class="memoryCells">0</li>
+          </ul>
+          <ul class="cellWrapper">
+            <li class="stackCell"></li>
+            <li class="memoryCells">0</li>
+          </ul>
+        </ul>
+        <textarea id="output" placeholder="Output" readonly></textarea>
+      </div>
+    </div>
+    
+    <script src="js/unfug.js"></script>
+  </body>
+</html>
